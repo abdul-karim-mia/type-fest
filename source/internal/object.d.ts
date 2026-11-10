@@ -42,17 +42,7 @@ export type BuildObject<Key extends PropertyKey, Value, CopiedFrom extends objec
 			: Pick<{[_ in keyof CopiedFrom]: Value}, ExactKey<CopiedFrom, Key>>
 		: never;
 
-/**
-Returns a boolean for whether the given type is a plain key-value object.
-*/
-export type IsPlainObject<T> =
-	IsNever<T> extends true
-		? false
-		: T extends NonRecursiveType | MapsSetsOrArrays
-			? false
-			: T extends object
-				? true
-				: false;
+export type {IsPlainObject} from '../is-plain-object.d.ts';
 
 /**
 Extract the object field type if T is an object and K is a key of T, return `never` otherwise.

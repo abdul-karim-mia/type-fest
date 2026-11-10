@@ -178,6 +178,7 @@ export type {IsEqual} from './source/is-equal.d.ts';
 export type {IsMutuallyAssignable} from './source/is-mutually-assignable.d.ts';
 export type {SubsetOf} from './source/subset-of.d.ts';
 export type {IsPrimitive} from './source/is-primitive.d.ts';
+export type {IsPlainObject} from './source/is-plain-object.d.ts';
 export type {IsLiteral} from './source/is-literal.d.ts';
 export type {IsStringLiteral} from './source/is-string-literal.d.ts';
 export type {IsNumericLiteral} from './source/is-numeric-literal.d.ts';
